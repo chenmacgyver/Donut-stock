@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025-1003 Us stock list</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 12px; /* 統一調整字體大小 */
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 12px; /* 標題字體大小 */
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #000000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            table-layout: auto;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #555;
+            color: #ffffff;
+            font-size: 12px; /* 表格內字體大小 */
+            min-width: 0;
+        }
+        th:nth-child(1), td:nth-child(1) { width: 5%; } /* 流水號 */
+        th:nth-child(2), td:nth-child(2) { width: 20%; } /* 公司名稱 */
+        th:nth-child(3), td:nth-child(3) { width: 10%; } /* 美股代號 */
+        th:nth-child(4), td:nth-child(4) { width: 10%; } /* 目前股價 */
+        th:nth-child(5), td:nth-child(5) { width: 25%; } /* 新聞消息 */
+        th:nth-child(6), td:nth-child(6) { width: 15%; } /* 產業類別 */
+        th:nth-child(7), td:nth-child(7) { width: 15%; } /* 符合川普政策 */
+        th {
+            background-color: #333;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #000000;
+        }
+        tr:hover {
+            background-color: #222;
+        }
+        /* 手機堆疊式表格 */
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #555;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+            td:before {
+                content: attr(data-label) ": ";
+                position: absolute;
+                left: 6px;
+                width: 45%;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>2025-1003 Us stock list</h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th data-label="流水號">流水號</th>
+                    <th data-label="公司名稱">公司名稱</th>
+                    <th data-label="美股代號">美股代號</th>
+                    <th data-label="目前股價">目前股價</th>
+                    <th data-label="新聞消息">新聞消息</th>
+                    <th data-label="產業類別">產業類別</th>
+                    <th data-label="符合川普政策">符合川普政策</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="流水號">1</td>
+                    <td data-label="公司名稱">AbCellera Biologics</td>
+                    <td data-label="美股代號">ABCL</td>
+                    <td data-label="目前股價">3.85</td>
+                    <td data-label="新聞消息">AbCellera 任命新首席醫療官 Sarah Noonberg；Phase 1 試驗首劑給藥 (2025-09-10)</td>
+                    <td data-label="產業類別">生技與藥物開發</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">2</td>
+                    <td data-label="公司名稱">AgEagle Aerial Systems</td>
+                    <td data-label="美股代號">UAVS</td>
+                    <td data-label="目前股價">7.78</td>
+                    <td data-label="新聞消息">AgEagle Aerial Systems 股價上漲 7.70%，無特定重大新聞 (2025-10-02)</td>
+                    <td data-label="產業類別">無人機系統</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">3</td>
+                    <td data-label="公司名稱">AirSculpt Technologies</td>
+                    <td data-label="美股代號">AIRS</td>
+                    <td data-label="目前股價">8.13</td>
+                    <td data-label="新聞消息">AirSculpt Technologies 報告 Q2 2025 收益；收入增長 11.79%，但淨收入下降 84.22% (2025-10-01)</td>
+                    <td data-label="產業類別">醫療技術</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">4</td>
+                    <td data-label="公司名稱">American Battery Technology</td>
+                    <td data-label="美股代號">ABAT</td>
+                    <td data-label="目前股價">3.00</td>
+                    <td data-label="新聞消息">American Battery Technology 與 Call2Recycle 合作擴大鋰離子電池回收；Q4 收入近三倍增長 (2025-09-18)</td>
+                    <td data-label="產業類別">電池回收與製造</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">5</td>
+                    <td data-label="公司名稱">Arena Holdings</td>
+                    <td data-label="美股代號">AREN</td>
+                    <td data-label="目前股價">5.20</td>
+                    <td data-label="新聞消息">Arena Group 授權股票回購計劃；Q2 財務轉型強勁，Lake Street 維持買入評級 (2025-08-15)</td>
+                    <td data-label="產業類別">媒體與數位平台</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">6</td>
+                    <td data-label="公司名稱">Aurora Innovation</td>
+                    <td data-label="美股代號">AUR</td>
+                    <td data-label="目前股價">5.70</td>
+                    <td data-label="新聞消息">Cantor Fitzgerald 維持對 Aurora Innovation 的買入評級；Reinvent Technology 期權交易活躍 (2025-09-15)</td>
+                    <td data-label="產業類別">自動駕駛科技</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">7</td>
+                    <td data-label="公司名稱">BigBear.ai Holdings</td>
+                    <td data-label="美股代號">BBAI</td>
+                    <td data-label="目前股價">7.07</td>
+                    <td data-label="新聞消息">H.C. Wainwright 將 BigBear.ai 目標價上調至 9 美元；證券集體訴訟截止日期逼近 (2025-07-09)</td>
+                    <td data-label="產業類別">人工智慧</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">8</td>
+                    <td data-label="公司名稱">Datavault AI</td>
+                    <td data-label="美股代號">DVLT</td>
+                    <td data-label="目前股價">3.75</td>
+                    <td data-label="新聞消息">Datavault AI 完成 Scilex Holding 1.5 億美元比特幣投資首期；與韓國航空大學 MOU (2025-10-02)</td>
+                    <td data-label="產業類別">人工智慧數據平台</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">9</td>
+                    <td data-label="公司名稱">Denison Mines</td>
+                    <td data-label="美股代號">DNN</td>
+                    <td data-label="目前股價">8.00</td>
+                    <td data-label="新聞消息">Desjardins 維持對 Denison Mines 的買入評級；Canaccord 目標價上調 (2025-10-03)</td>
+                    <td data-label="產業類別">鈾礦</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">10</td>
+                    <td data-label="公司名稱">Draganfly</td>
+                    <td data-label="美股代號">DPRO</td>
+                    <td data-label="目前股價">9.62</td>
+                    <td data-label="新聞消息">Draganfly 獲美國陸軍選中供應 Flex FPV 無人機系統；H.C. Wainwright 目標價上調至 9 美元 (2025-10-01)</td>
+                    <td data-label="產業類別">無人機系統</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">11</td>
+                    <td data-label="公司名稱">Energy Fuels Inc.</td>
+                    <td data-label="美股代號">UUUU</td>
+                    <td data-label="目前股價">16.31</td>
+                    <td data-label="新聞消息">Energy Fuels 將可轉債發行規模增至 6 億美元；股價上漲 2.35% (2025-10-01)</td>
+                    <td data-label="產業類別">能源與鈾礦</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">12</td>
+                    <td data-label="公司名稱">Genius Sports</td>
+                    <td data-label="美股代號">GENI</td>
+                    <td data-label="目前股價">11.90</td>
+                    <td data-label="新聞消息">Genius Sports 收購 Sports Innovation Lab；Nevada 8 月遊戲收入增長 5.49% (2025-09-18)</td>
+                    <td data-label="產業類別">體育科技</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">13</td>
+                    <td data-label="公司名稱">IONQ</td>
+                    <td data-label="美股代號">IONQ</td>
+                    <td data-label="目前股價">64.94</td>
+                    <td data-label="新聞消息">IonQ Q2 收入增長但虧損擴大；量子計算合作進展 (2025-08-07)</td>
+                    <td data-label="產業類別">量子計算</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">14</td>
+                    <td data-label="公司名稱">Lyft Tech</td>
+                    <td data-label="美股代號">LYFT</td>
+                    <td data-label="目前股價">21.86</td>
+                    <td data-label="新聞消息">Lyft 首席執行官談與 Waymo 合作：「這只是開始」；股價小幅上漲 (2025-09-17)</td>
+                    <td data-label="產業類別">移動出行</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">15</td>
+                    <td data-label="公司名稱">Microvast Holdings</td>
+                    <td data-label="美股代號">MVST</td>
+                    <td data-label="目前股價">4.24</td>
+                    <td data-label="新聞消息">Microvast 股價小幅波動，無特定重大新聞；電池技術合作進展 (2025-10-02)</td>
+                    <td data-label="產業類別">電動車電池</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">16</td>
+                    <td data-label="公司名稱">Navitas Semiconductor</td>
+                    <td data-label="美股代號">NVTS</td>
+                    <td data-label="目前股價">7.57</td>
+                    <td data-label="新聞消息">Nvidia 稱讚 NVTS 為 AI 軍備競賽的秘密武器；Q2 收入超預期但 EPS 落後 (2025-08-11)</td>
+                    <td data-label="產業類別">半導體</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">17</td>
+                    <td data-label="公司名稱">Niu Tech</td>
+                    <td data-label="美股代號">NIU</td>
+                    <td data-label="目前股價">4.82</td>
+                    <td data-label="新聞消息">Niu Technologies 股價小幅波動，無特定重大新聞；電動車需求回升帶動 Q3 預期 (2025-10-02)</td>
+                    <td data-label="產業類別">電動車</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">18</td>
+                    <td data-label="公司名稱">Ondas Holdings</td>
+                    <td data-label="美股代號">ONDS</td>
+                    <td data-label="目前股價">7.57</td>
+                    <td data-label="新聞消息">Ondas Holdings 投資 Kopin 的 AI 與 MicroLED 技術；股價上漲 25.03% (2025-10-02)</td>
+                    <td data-label="產業類別">無線通訊與無人機</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">19</td>
+                    <td data-label="公司名稱">Opendoor Technologies</td>
+                    <td data-label="美股代號">OPEN</td>
+                    <td data-label="目前股價">8.06</td>
+                    <td data-label="新聞消息">Opendoor Technologies 和解案獲得初步批准；全國推出房屋銷售平台 (2025-09-30)</td>
+                    <td data-label="產業類別">房地產科技</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">20</td>
+                    <td data-label="公司名稱">ParaZero Technologies</td>
+                    <td data-label="美股代號">PRZO</td>
+                    <td data-label="目前股價">1.69</td>
+                    <td data-label="新聞消息">ParaZero 完成 DefendAir 靜態砲塔系統實地測試；與以色列國防合作 (2025-09-15)</td>
+                    <td data-label="產業類別">無人機安全</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">21</td>
+                    <td data-label="公司名稱">Personalis</td>
+                    <td data-label="美股代號">PSNL</td>
+                    <td data-label="目前股價">6.92</td>
+                    <td data-label="新聞消息">Personalis 股價小幅波動，無特定重大新聞；Q2 財報顯示收入增長但虧損擴大 (2025-10-02)</td>
+                    <td data-label="產業類別">生技與基因定序</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">22</td>
+                    <td data-label="公司名稱">Plug Power</td>
+                    <td data-label="美股代號">PLUG</td>
+                    <td data-label="目前股價">2.93</td>
+                    <td data-label="新聞消息">Plug Power 為 Galp 的 Sines 煉油廠項目交付電解槽；預計 Q4 毛利率盈虧平衡 (2025-10-02)</td>
+                    <td data-label="產業類別">氫能與燃料電池</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">23</td>
+                    <td data-label="公司名稱">Red Cat Holdings</td>
+                    <td data-label="美股代號">RCAT</td>
+                    <td data-label="目前股價">10.95</td>
+                    <td data-label="新聞消息">Red Cat Holdings 股價上漲 1.60%，無特定重大新聞 (2025-10-02)</td>
+                    <td data-label="產業類別">無人機系統</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">24</td>
+                    <td data-label="公司名稱">Solid Power</td>
+                    <td data-label="美股代號">SLDP</td>
+                    <td data-label="目前股價">6.30</td>
+                    <td data-label="新聞消息">Solid Power 啟動 1.5 億美元股票發行；BMW 測試 ASSB 電池 (2025-09-05)</td>
+                    <td data-label="產業類別">固態電池</td>
+                    <td data-label="符合川普政策">是</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">25</td>
+                    <td data-label="公司名稱">SoFi Technologies</td>
+                    <td data-label="美股代號">SOFI</td>
+                    <td data-label="目前股價">26.07</td>
+                    <td data-label="新聞消息">SoFi Technologies Q3 貸款平台用戶增長 18%；分析師上調目標價 (2025-09-25)</td>
+                    <td data-label="產業類別">金融科技</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">26</td>
+                    <td data-label="公司名稱">Taboola Holdings</td>
+                    <td data-label="美股代號">TBLA</td>
+                    <td data-label="目前股價">3.68</td>
+                    <td data-label="新聞消息">Taboola 管理層與 Needham 會晤；Q2 收入增長 21.1%，分析師維持買入評級 (2025-09-18)</td>
+                    <td data-label="產業類別">數位廣告</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">27</td>
+                    <td data-label="公司名稱">Veritone Technologies</td>
+                    <td data-label="美股代號">VERI</td>
+                    <td data-label="目前股價">5.17</td>
+                    <td data-label="新聞消息">Veritone 股價上漲 9% 至 6.20 美元，因宣佈與 ESPN 音頻內容許可協議；H.C. Wainwright 維持買入評級 (2025-09-23)</td>
+                    <td data-label="產業類別">人工智慧與媒體</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">28</td>
+                    <td data-label="公司名稱">ZenaTech</td>
+                    <td data-label="美股代號">ZENA</td>
+                    <td data-label="目前股價">5.39</td>
+                    <td data-label="新聞消息">ZenaTech 開發專有量子計算硬體平台；Eagle Eye 量子計劃啟動 (2025-09-25)</td>
+                    <td data-label="產業類別">量子計算</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+                <tr>
+                    <td data-label="流水號">29</td>
+                    <td data-label="公司名稱">IONQ</td>
+                    <td data-label="美股代號">IONQ</td>
+                    <td data-label="目前股價">64.94</td>
+                    <td data-label="新聞消息">IonQ Q2 收入增長但虧損擴大；量子計算合作進展 (2025-08-07)</td>
+                    <td data-label="產業類別">量子計算</td>
+                    <td data-label="符合川普政策">否</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
